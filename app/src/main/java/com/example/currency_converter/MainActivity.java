@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
     public void convertToDollar(View view){
         EditText editText = (EditText) findViewById(R.id.edtText);
 
-        int rupees = Integer.parseInt(editText.getText().toString());
-        int dollars = 82;
+        int dollars = Integer.parseInt(editText.getText().toString());
+        int onedollar = 82;
 
-        double result = rupees * dollars ;
+        double result = dollars * onedollar ;
 
         Toast.makeText(MainActivity.this, Double.toString(result), Toast.LENGTH_LONG).show();
     }
